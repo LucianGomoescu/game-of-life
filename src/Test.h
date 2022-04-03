@@ -15,3 +15,9 @@ public:
   string GetName() override { return "valid initialisation"; }
   TestStatus Run() override;
 };
+
+class TestGenerationAdvancement : public ITest {
+public:
+  string GetName() override { return "generation advancement"; }
+  TestStatus Run() override;
+};

@@ -11,10 +11,12 @@ public:
 
   void PrintGeneration();
   vector<vector<bool>> const & GetGeneration() const { return m_grid; }
+  void GoToGeneration(int genNum);
 
 private:
   void SetAliveCells(vector<pair<int, int>> const & alives);
   void KillAll();
+  void GoToNextGeneration();
 
   int m_generation;
   vector<vector<bool>> m_grid;

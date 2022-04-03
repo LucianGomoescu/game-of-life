@@ -23,6 +23,7 @@ int main() {
   int numFailedTests = 0;
   vector<ITest*> tests;
   tests.push_back(new TestValidInitialisation);
+  tests.push_back(new TestGenerationAdvancement);
   cout<<"TESTS:"<<endl;
   for (auto test : tests) {
       auto status = test->Run();
